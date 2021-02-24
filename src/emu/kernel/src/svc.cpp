@@ -3429,8 +3429,8 @@ namespace eka2l1::epoc {
         const std::int32_t reason = static_cast<std::int32_t>(create_info->arg1_);
 
         if (!thr->kill(kernel::entity_exit_type::kill, common::utf8_to_ucs2("None"), reason)) {
-            finish_status_request_eka1(target_thread, finish_signal, epoc::error_general);
-            return epoc::error_general;
+            //finish_status_request_eka1(target_thread, finish_signal, epoc::error_general);
+           //return epoc::error_general;
         }
 
         finish_status_request_eka1(target_thread, finish_signal, epoc::error_none);
