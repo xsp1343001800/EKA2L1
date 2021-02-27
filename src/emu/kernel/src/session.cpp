@@ -142,7 +142,7 @@ namespace eka2l1 {
             arg.flag = 0;
             std::fill(arg.args, arg.args + 4, 0);
 
-            send_receive_sync(standard_ipc_message_disconnect, arg, 0);
+            //send_receive_sync(standard_ipc_message_disconnect, arg, 0);
             
             if (svr->is_hle()) {
                 svr->process_accepted_msg();
