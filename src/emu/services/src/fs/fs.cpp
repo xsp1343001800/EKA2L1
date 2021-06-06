@@ -430,7 +430,7 @@ namespace eka2l1 {
         // What you want more? The doc does not say anything, and app wants this
         // Example: n-gage 2.0
         if (io->exist(private_path)) {
-            ctx->complete(epoc::error_none);
+            ctx->complete(epoc::error_already_exists);
             return;
         }
 
